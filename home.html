@@ -1,0 +1,57 @@
+<!DOCTYPE html>    <!-- Home page-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch Some Grass</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">Touch Some Grass</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="Self Assessment.html">Self-Assessment</a></li>
+                <li><a href="Support Forums.html">Support Forums</a></li>
+                <li><a href="Privacy Polices.html">Privacy Policies</a></li>
+                <li><a href="Find-A-Professional.html">Find Health Professionals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Your Mental Health Matters</h1>
+        <p>Find resources, connect with others, and take steps toward better mental health.</p>
+        <a href="resources.html" class="cta-btn">Get Started</a>
+    </section>
+
+    <!-- Why Mental Health Matters Section -->
+    <section class="mental-health">
+        <h2>Why Mental Health Matters</h2>
+        <div class="topics">
+            <div onclick="showPopup('Anxiety', 'Anxiety can cause excessive worry and tension, impacting daily life. Learning coping strategies can help manage these feelings.')">Anxiety</div>
+            <div onclick="showPopup('Isolation', 'Isolation can lead to loneliness and affect mental well-being. Staying connected is key to overcoming these feelings.')">Isolation</div>
+            <div onclick="showPopup('Suicide Prevention', 'Preventing suicide involves support, understanding, and resources for those struggling with hopelessness.')">Suicide Prevention</div>
+            <div onclick="showPopup('Depression', 'Depression is a mental health disorder characterized by persistent sadness and a lack of interest in daily activities.')">Depression</div>
+        </div>
+    </section>
+
+    <!-- Popup Modal -->
+    <div class="popup" id="popup">
+        <h3 id="popup-title"></h3>
+        <p id="popup-content"></p>
+        <button class="close-popup" onclick="closePopup()">Close</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Touch Some Grass. All rights reserved.</p>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>

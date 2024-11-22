@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Discussion - Touch Some Grass</title>
+    <link rel="stylesheet" href="Online Discussion.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Touch Some Grass</div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="resources.html">Resources</a>
+            <a href="Self Assessment.html">Self-Assessment</a>
+            <a href="Privacy Polices.html">Privacy Policies</a>
+            <a href="Find-A-Professional.html">Find Health Professionals</a>
+            <a href="Support Forums.html">Support forums</a>
+            <select>
+                <option>English</option>
+                <option>Afrikaans</option>
+            </select>
+        </nav>
+    </header>
+
+    <main>
+        <section class="discussion-container">
+            <h1>Discussion Forum</h1>
+            <p>Join the conversation and share your thoughts. Your voice matters.</p>
+            
+            <!-- Discussion Area -->
+            <div class="discussion-area" id="discussionArea">
+                <!-- Messages will be displayed here -->
+            </div>
+
+            <!-- Discussion Input -->
+            <div class="discussion-input">
+                <textarea id="userPost" rows="4" placeholder="Share your thoughts..."></textarea>
+                <button class="btn" onclick="postThought()">Post Thought</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Touch Some Grass. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+        </div>
+    </footer>
+
+    <script src="Online Discussion.js"></script>
+</body>
+</html>

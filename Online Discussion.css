@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background-color: #a8d5ba;
+    padding: 1rem 2rem;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 1.5rem;
+}
+nav select {
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+main {
+    padding: 2rem;
+}
+.discussion-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+h1, h2 {
+    color: #333;
+}
+p {
+    margin-bottom: 1rem;
+}
+.discussion-area {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.discussion-message {
+    background-color: #f0f8ff;
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 600px;
+    margin-bottom: 1rem;
+}
+.discussion-input {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+textarea {
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 1rem;
+}
+.btn {
+    background-color: #a8d5ba;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    align-self: flex-end;
+}
+.btn:hover {
+    background-color: #85bf9f;
+}
+footer {
+    background-color: #a8d5ba;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+footer .social-links a {
+    color: white;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+footer .social-links a:hover {
+    color: #d7e6f7;
+}

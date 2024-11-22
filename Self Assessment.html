@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch Some Grass - Mental Health App</title>
+    <link rel="stylesheet" href="Self Assessment.css">
+</head>
+<body>
+    <div class="container" id="auth-container">
+        <h2>Touch Some Grass</h2>
+        <h3 id="auth-header">Register</h3>
+        <input type="text" id="username" placeholder="Username" class="input-field">
+        <input type="password" id="password" placeholder="Password" class="input-field">
+        <button onclick="authenticate()" id="auth-button" class="button">Register</button>
+        <p id="auth-toggle">Already have an account? <a href="#" onclick="toggleAuth()">Login here</a></p>
+    </div>
+
+    <div class="container hidden" id="assessment-container">
+        <h2>Self-Assessment</h2>
+        <form id="assessment-form">
+            <div id="questions-container"></div>
+            <button type="button" onclick="calculateResults()" class="button">Submit</button>
+        </form>
+        <div id="results" class="results"></div>
+    </div>
+
+    <script src="Self Assessment.js"></script>
+</body>
+</html>
